@@ -1,7 +1,4 @@
-"use strict";   
-printName();
-
-function printName(){
-    name = "Abdullah Al Mamun";
-   console.log(name);
-}
+let color = ['red','black','brown'];
+let color_opt = ['white','light','blue'];
+let spreadArray = [...color,'success'];
+console.log(speadArray);
