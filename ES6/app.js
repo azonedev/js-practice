@@ -1,17 +1,17 @@
-// type casting check 
-// differents between == & === , != & !==
-let intValue = 5;
-let stringValue = '5';
+// assignment operator
 
-if(intValue==stringValue){
-    console.log('Those are equal but not same type');
-}else{
-    console.log('Those are not equal');
-}
-console.log(intValue!=stringValue);
-console.log(intValue!==stringValue);
-// if(intValue===stingValue){
-//     console.log('Those are equal with same type');
-// }else{
-//     console.log('those are equal but not same type');
-// }
+// value asign with = sign
+// example
+// let dream = "To be a SWE";
+
+// += assignment operator
+// example
+// var a = 5; 
+// var a += 30;
+// console.log(a);
+// var a = 29;
+// var a += 50;
+// -=
+// /=
+// %=
+//  *=
