@@ -1,17 +1,7 @@
-// assignment operator
-
-// value asign with = sign
-// example
-// let dream = "To be a SWE";
-
-// += assignment operator
-// example
-// var a = 5; 
-// var a += 30;
-// console.log(a);
-// var a = 29;
-// var a += 50;
-// -=
-// /=
-// %=
-//  *=
+// যদি কন্ডিশন সত্য হয় ? তাইলে ভ্যালু এটা : নাইলে ভ্যালু এইটা
+// conditional - opertor
+var a = 89;
+var b = 03;
+var c = a>b ? 500:100;
+console.log(c);
+console.log(typeof(c));
