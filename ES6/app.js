@@ -1,7 +1,35 @@
-// যদি কন্ডিশন সত্য হয় ? তাইলে ভ্যালু এটা : নাইলে ভ্যালু এইটা
-// conditional - opertor
-var a = 89;
-var b = 03;
-var c = a>b ? 500:100;
-console.log(c);
-console.log(typeof(c));
+// conditional statement
+if(codition){
+    output
+}else{
+    // fall result
+}
+
+if(condition){
+    // true result
+}else if(condition){
+    // another result
+}else{
+    // false
+}
+
+// loop statements  
+
+// loops in js
+1. for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
+} 
+2. while (condition) {
+    
+}
+3. do {
+    
+} while (condition);
+
+// loop excetra 
+// break  
+//  break is use to break a loop means out from loop or force to stop a loops anywhere
+// continue
+// continue is use to skip a step
+ 
