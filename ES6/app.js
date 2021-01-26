@@ -1,14 +1,17 @@
-// js can add auto-metic semiclone but not all 
-// ['hello','coders','here','we','are'].forEach(alert);
+// type casting check 
+// differents between == & === , != & !==
+let intValue = 5;
+let stringValue = '5';
 
-// there will be an error for auto semiclone issue
-// alert("There will be an error")
-
-// [1, 2].forEach(alert)
-
-// there is no issue of auto semiclone like
-alert(
-    3+
-    2+
-    4
-)
+if(intValue==stringValue){
+    console.log('Those are equal but not same type');
+}else{
+    console.log('Those are not equal');
+}
+console.log(intValue!=stringValue);
+console.log(intValue!==stringValue);
+// if(intValue===stingValue){
+//     console.log('Those are equal with same type');
+// }else{
+//     console.log('those are equal but not same type');
+// }
