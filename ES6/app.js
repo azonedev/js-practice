@@ -1,22 +1,28 @@
-// Logical Order in If Else Statements
-
-// output one
-function foo(x) {
-    if (x < 1) {
-      return "Less than one";
-    } else if (x < 2) {
-      return "Less than two";
-    } else {
-      return "Greater than or equal to two";
+// Multiple Identical Options in Switch Statements
+function sequentialSizes(val) {
+    var answer = "";
+    // Only change code below this line
+  
+    switch(val){
+      case 1:
+      case 2:
+      case 3:
+        return "Low";
+        break;
+      case 4:
+      case 5:
+      case 6:
+        return "Mid";
+      break;
+      case 7:
+      case 8:
+      case 9:
+        return "High";
+      break;
     }
+  
+    // Only change code above this line
+    return answer;
   }
-// output two
-  function bar(x) {
-    if (x < 2) {
-      return "Less than two";
-    } else if (x < 1) {
-      return "Less than one";
-    } else {
-      return "Greater than or equal to two";
-    }
-  }
+  
+  sequentialSizes(1);
