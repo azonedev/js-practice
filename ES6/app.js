@@ -1,14 +1,25 @@
-// accessing nested object
-var myStorage = {
-    "car": {
-      "inside": {
-        "glove box": "maps",
-        "passenger seat": "crumbs"
-       },
-      "outside": {
-        "trunk": "jack"
-      }
+// access data from multiple object & nested array
+
+// Setup
+var myPlants = [
+    {
+      type: "flowers",
+      list: [
+        "rose",
+        "tulip",
+        "dandelion"
+      ]
+    },
+    {
+      type: "trees",
+      list: [
+        "fir",
+        "pine",
+        "birch"
+      ]
     }
-  };
+  ];
   
-  var gloveBoxContents =myStorage.car.inside['glove box']; 
+  // Only change code below this line
+  
+  var secondTree = myPlants[1].list[1]; // Change this line
