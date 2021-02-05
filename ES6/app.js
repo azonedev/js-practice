@@ -20,3 +20,11 @@ var object = {
     'tails':5.6,
     'friends':['Tushar','Sami','Rokibul']
     };
+
+// change a object property
+object.name = "Abdullah Al Mamun";
+console.log(object);
+
+// add a new property on object
+object.age = 19;
+console.log(object);
