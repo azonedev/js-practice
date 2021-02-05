@@ -28,3 +28,7 @@ console.log(object);
 // add a new property on object
 object.age = 19;
 console.log(object);
+
+// delete properties from object
+delete object.tails;
+console.log(object);
