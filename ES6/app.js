@@ -1,12 +1,10 @@
-// Iterate Through an Array with a For Loop
+// add new element of array with for loop
 
-// Setup
-var myArr = [ 2, 3, 4, 5, 6];
+// setup
+var array = [];
 
-// Only change code below this line
-var total = 0;
-for(var i =0;i<myArr.length;i++){
-    total = total +myArr[i];
+// ready to code for problem
+for (var i = 1; i < 10; i+=2) {
+    array.push(i);
+    
 }
-
-
