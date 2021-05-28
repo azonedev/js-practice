@@ -14,28 +14,28 @@
     <div id="widgets" style="width: 220px;font-family: Arial, Helvetica, sans-serif;"></div> <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <script>let widgets=document.getElementById('widgets');let url="https://myfists.com/api/v1/widgets-data?business=beautytrendz.us";axios.get(url).then((resp)=>{widgets.innerHTML=`<center><img src="${resp.data['directoryLogo']}"width="150px"><p style="font-size:16">Rating:${resp.data['businessRating']} | Reviews:${resp.data['businessReviews']}</p></center>`}).catch((err)=>{console.log('Sorry!');});</script>
      -->
 
-    <div id="widgets" style="width: 220px;font-family: Arial, Helvetica, sans-serif;">
+     <div id="widgets" style="width: 220px;font-family: Arial, Helvetica, sans-serif;display:block;margin:0 auto;background:#fff;padding:15px 0px">
     </div>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
         let widgets = document.getElementById('widgets');
-
+    
         // get data from api
-        let url = "https://myfists.com/api/v1/widgets-data?business=lovins-ins.com";
-        axios.get(url)
-        .then((resp) => {
+        fetch('http://127.0.0.1:8000/api/v1/widgets-data?business=lovins-ins.com')
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
             widgets.innerHTML = `
                 <center>
-                <img src="${resp.data['directoryLogo']}" width="150px">
-
-                <p style="font-size:16">Rating : ${resp.data['businessRating']} | Reviews : ${resp.data['businessReviews']}</p>
+                    <a href="${data.businessUrl}">
+                        <img src="${data.directoryLogo}" width="150px" draggable="false">
+                        <img src="${data.ratingImage}" width="150px" draggable="false">
+                        <p style="font-size:16;font-weight:600">Rating : ${data.businessRating} | Reviews : ${data.businessReviews}</p>    
+                    </a>
                 </center>
-            ` 
-            // console.log(result.data);
-        }).catch((err) => {
-            console.log('Sorry!');
+            ` ;
         });
-        
     </script>
+                    
 </body>
 </html>
