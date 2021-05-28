@@ -14,7 +14,7 @@
     <div id="widgets" style="width: 220px;font-family: Arial, Helvetica, sans-serif;"></div> <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <script>let widgets=document.getElementById('widgets');let url="https://myfists.com/api/v1/widgets-data?business=beautytrendz.us";axios.get(url).then((resp)=>{widgets.innerHTML=`<center><img src="${resp.data['directoryLogo']}"width="150px"><p style="font-size:16">Rating:${resp.data['businessRating']} | Reviews:${resp.data['businessReviews']}</p></center>`}).catch((err)=>{console.log('Sorry!');});</script>
      -->
 
-     <div id="widgets" style="width: 220px;font-family: Arial, Helvetica, sans-serif;display:block;margin:0 auto;background:#fff;padding:15px 0px">
+     <div id="widgets" style="width: 220px;font-family: Arial, Helvetica, sans-serif;display:block;margin:0 auto;background:#fff;padding:15px 0px;">
     </div>
     <script>
         let widgets = document.getElementById('widgets');
@@ -27,7 +27,7 @@
         .then((data) => {
             widgets.innerHTML = `
                 <center>
-                    <a href="${data.businessUrl}">
+                    <a href="${data.businessUrl}" style=" text-decoration: none;color:#000">
                         <img src="${data.directoryLogo}" width="150px" draggable="false">
                         <img src="${data.ratingImage}" width="150px" draggable="false">
                         <p style="font-size:16;font-weight:600">Rating : ${data.businessRating} | Reviews : ${data.businessReviews}</p>    
