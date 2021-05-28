@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- minify -->
+<!-- 
+    <div id="widgets" style="width: 220px;font-family: Arial, Helvetica, sans-serif;"></div> <script src="https://unpkg.com/axios/dist/axios.min.js"></script> <script>let widgets=document.getElementById('widgets');let url="https://myfists.com/api/v1/widgets-data?business=beautytrendz.us";axios.get(url).then((resp)=>{widgets.innerHTML=`<center><img src="${resp.data['directoryLogo']}"width="150px"><p style="font-size:16">Rating:${resp.data['businessRating']} | Reviews:${resp.data['businessReviews']}</p></center>`}).catch((err)=>{console.log('Sorry!');});</script>
+     -->
+
+    <div id="widgets" style="width: 220px;font-family: Arial, Helvetica, sans-serif;">
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        let widgets = document.getElementById('widgets');
+
+        // get data from api
+        let url = "https://myfists.com/api/v1/widgets-data?business=lovins-ins.com";
+        axios.get(url)
+        .then((resp) => {
+            widgets.innerHTML = `
+                <center>
+                <img src="${resp.data['directoryLogo']}" width="150px">
+
+                <p style="font-size:16">Rating : ${resp.data['businessRating']} | Reviews : ${resp.data['businessReviews']}</p>
+                </center>
+            ` 
+            // console.log(result.data);
+        }).catch((err) => {
+            console.log('Sorry!');
+        });
+        
+    </script>
+</body>
+</html>
